@@ -411,6 +411,70 @@ body {
     text-decoration: underline;
 }
 
+/* --- CONTACT TABLE --- */
+.contact-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: var(--space-lg) 0;
+}
+
+.contact-table {
+    width: 100%;
+    min-width: 34rem;
+    border-collapse: collapse;
+    background-color: var(--color-bg-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px var(--color-box-shadow);
+}
+
+.contact-table th,
+.contact-table td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(199, 166, 112, 0.35);
+}
+
+.contact-table th {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.contact-table td {
+    color: var(--color-text);
+}
+
+.contact-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.contact-table tbody tr:hover {
+    background-color: rgba(199, 166, 112, 0.14);
+}
+
+.contact-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.phone-number {
+    cursor: help;
+}
+
+.phone-number__full {
+    display: none;
+}
+
+.phone-number:hover .phone-number__masked,
+.phone-number:focus .phone-number__masked {
+    display: none;
+}
+
+.phone-number:hover .phone-number__full,
+.phone-number:focus .phone-number__full {
+    display: inline;
+}
+
 /* --- CONTACT FORM --- */
 .contact-form {
     background-color: var(--color-bg-subtle);
